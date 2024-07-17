@@ -95,3 +95,7 @@ Lioness_PerSource <- function(i) {
     }
   }
 }
+
+future::plan(multisession, workers = 60)
+results <- future_lapply(1:nrow(Cancer_ExprM), FUN = Lioness_PerSource, future.seed = TRUE)
+plan(sequential)
