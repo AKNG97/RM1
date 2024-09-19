@@ -39,7 +39,7 @@ library(RColorBrewer)
 r.hc_Discovery$plots[[4]] #RCSI
 r.hc_Discovery$plots[[3]] #Pvalues
 
-#Crea una paleta de colores para tus cluters
+#Crea una paleta de colores para tus cluters; no cambies nada de estas tres líneas
 clusters_unique <- names(table(assigments.Discovery$consensuscluster))
     clusters_palette <- colorRampPalette(brewer.pal(9, "Paired"))(length(clusters_unique))
     clusters_palette <- setNames(clusters_palette, clusters_unique)
