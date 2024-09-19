@@ -29,7 +29,7 @@ library(RColorBrewer)
 
     data <- r.hc_Discovery$realdataresults[[OptimalK]]$ordered_data
 
-    #Guarda UMAP y PCA del OptimalK
+    #Guarda UMAP y PCA del OptimalK; cambia los nombres de archivos
     umap <- umap(data,labels=assigments.Discovery$consensuscluster,legendtextsize = 10,axistextsize = 10,dotsize=2)
     ggsave(paste0(Clustering.dir,  "/UMAP_K", k, "_Top", top, ".png") , plot = umap)
     pca <- pca(data,labels=assigments.Discovery$consensuscluster,legendtextsize = 10,axistextsize = 10,dotsize=2)
