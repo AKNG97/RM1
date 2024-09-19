@@ -1,5 +1,11 @@
 
 
+library(dplyr)
+library(tidyr)
+library(M3C)
+library(ComplexHeatmap)
+library(circlize)
+library(RColorBrewer)
 
 #Filtra genes más variables
 
