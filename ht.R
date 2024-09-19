@@ -2,7 +2,7 @@
 
 library(dplyr)
 library(tidyr)
-library(M3C)
+library(M3C) #en caso de que vayas a hacer clustering con M3C, si no, lo puedes hacer en el heatmap (puse instrucciones abajo)
 library(ComplexHeatmap)
 library(circlize)
 library(RColorBrewer)
