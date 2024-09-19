@@ -12,7 +12,7 @@ library(RColorBrewer)
  filtered_results <- featurefilter(Cancer_Degrees,
                                     percentile=15, #porcetaje de features mas variables a elegir
                                     method='MAD', #puede ser MAD o var
-                                    topN=10)
+                                    topN=10) #Esta funcion es de M3C; pero puedes usar apply para calcular varianza también
   
   Cancer_Degrees.scaled <- as.data.frame(t(scale(t(filtered_results$filtered_data)))) #Escala los datos
 
