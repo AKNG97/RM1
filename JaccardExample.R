@@ -44,7 +44,7 @@ jaccard_par <- function(x, TopEdges){
   
   for(y in 1:length(samples)){
     
-    print(y)
+    #print(y)
     
     sample2 <- samples[y]
     
